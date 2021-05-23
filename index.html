@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="reg_icon.png">
+</head>
+
+<body>
+
+    <video id="videoBG" poster="naturepic.png" autoplay muted loop>
+        <source src="naturevideo1.mp4" type="video/mp4">
+    </video>
+
+    <div class="panel">
+        <form action="">
+            <h1>Register</h1>
+            <p>
+                <label for="firstname" class="bgc">First Name </label>
+                <input type="text" id="firstname" required>
+            </p>
+
+            <p>
+                <label for="lastname" class="bgc">Last Name </label>
+                <input type="text" id="lastname" required>
+            </p>
+
+            <p>
+                <label class="bgc">Gender</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+            </p>
+
+            <p>
+                <label for="qualification" class="bgc">Highest Qualification</label>
+                <select id="qualification" required>
+                    <option>--none--</option>
+                    <option>SSC</option>
+                    <option>Inter</option>
+                    <option>B.Tech</option>
+                    <option>M.Tech</option>
+                    <option>PhD</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="email" class="bgc">EMail</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phonenumber" class="bgc">Phone Number</label>
+                <input type="text" id="phonenumber" required>
+            </p>
+
+            <p>
+                <label for="address" class="bgc" id="sym">Address</label>
+                <textarea id="address" rows="5" cols="30" required></textarea>
+            </p>
+
+            <button id="btn1">Submit</button>
+            <button id="btn2">Reset</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
