@@ -1,0 +1,158 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  /* padding-top: 25px; */
+}
+
+
+#videoBG{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.panel{
+    background-image: url(trans5.jpg);
+    /* object-fit: cover; */
+    background-size: cover;
+    background-color: #fffddd;
+    border-radius: 20px;
+    /* width: 100%;
+    max-width: 960px; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 115vh;
+    line-height: 50px;
+}
+
+.bgc{
+    color: #98695d;
+    display: inline-block;
+    width: 150px;
+}
+
+button{
+    margin-left: 200px;
+}
+
+#sym{
+    position: relative;
+    bottom: 68px;
+}
+
+#btn1{
+    /* text-align: right; */
+    margin-left: 5px;
+    float: left;
+}
+
+#btn2{
+    float: right;
+}
+
+h1{
+    text-align: center;
+    color: #1d3557;
+}
+
+button{
+    background: none;
+    color: #14213d;
+    border: 2px solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+button:hover{
+    border-radius: 30px;
+    border-color: #997b66;
+    background-color: #354f52;
+    color: white;
+    box-shadow: 0 8px 8px -8px #3a0ca3;
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
+
+@media (max-width: 1500px){
+    .panel {
+        flex-direction: row;
+        width: 100%;
+        background-attachment: scroll;
+        display: flex;
+        line-height: 50px;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(trans10.jpg);
+        position: sticky;
+        font-size: 14px;
+        padding-top: 50px;
+        /* max-width: 600px;
+        height: 600px; */
+    }
+    .bgc{
+        color: #98695d;
+        display: inline-block;
+        width: 130px;
+        text-align: center;
+    }
+    #sym{
+        position: static;
+        /* bottom: 68px; */
+    }
+    body{
+        background-image: url(naturepic.png);
+    }
+    form textarea{
+        width: 190px;
+        height: 80px;       
+    }
+    #videoBG{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        /* width: 100vw;
+        height: 100vh; */
+        z-index: -1;
+    }
+
+    button{
+        background: none;
+        color: #14213d;
+        border: 2px solid;
+        padding: 5px 10px;
+        font-size: 14px;
+        transition: all 0.5s;
+    }
+
+    button:hover{
+        border-radius: 30px;
+        border-color: #997b66;
+        background-color: #354f52;
+        color: white;
+        box-shadow: 0 8px 8px -8px #3a0ca3;
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
+
+    #btn1{
+        margin-left: 20px;
+        float: left;
+    }
+
+    #btn2{
+        margin-right: 20px;
+        float: right;
+    }
+}
